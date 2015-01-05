@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet"
+        />
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div data-role="page" id="home" style="background-image: url('images/01.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="b">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed">
+                <h1>GUEST HOUSE</h1>
+            </div>
+            <div data-role="content"></div>
+            <div data-role="footer" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House Azaya</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#home" data-rel="page" data-transition="flip" data-icon="home"
+                            data-theme="b">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#menu" data-rel="page" data-transition="flip" data-icon="grid"
+                            data-theme="b">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#infp" data-rel="page" data-transition="flip" data-icon="info"
+                            data-theme="b">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="menu" style="background-image: url('images/IMG_4788.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+        data-theme="b">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-theme="b">
+                <h1>Menu</h1>
+            </div>
+            <div data-role="content">
+                <h3>Menu</h3>
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#guestroom">Guest Room</a>
+                    </li>
+                    <li>
+                        <a href="#dining">Dining</a>
+                    </li>
+                    <li>
+                        <a href="#garden">Garden</a>
+                    </li>
+                    <li>
+                        <a href="#reservation">Reservation</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#home" data-rel="page" data-transition="flip" data-icon="home"
+                            data-theme="b">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#menu" data-rel="page" data-transition="flip"
+                            data-icon="grid" data-theme="b">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#info" data-rel="page" data-transition="slidefade" data-icon="info">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="guestroom" data-theme="b">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest Room</h1>
+                <a data-role="button" href="#menu" data-transition="flip" data-icon="arrow-l">Back</a>
+            </div>
+            <div data-role="content">
+                <img src="images/hotel-room.jpg" width="290" height="175" style="display: block; margin: 0 auto"
+                />
+                <h3>Dapatkan pemandangan menarik</h3>
+                <span>Setiap kamar di desain dengan suasana pedesaan yang sejuk, di lengkapi dengan perlengkapan
+                    tidur yang memanjakan seperti tempat tidur spring-bed, layar flat TV, bebas akses
+                    internet.</span>
+                <a data-role="button" href="#readmore" data-mini="true" data-theme="a"
+                data-inline="true">Read More</a>
+            </div>
+            <div data-role="footer" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House Azaya</h1>
+            </div>
+        </div>
+        <div data-role="dialog" id="readmore" data-theme="b">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-theme="b">
+                <h1>Guest House</h1>
+            </div>
+            <div data-role="content">
+                <img src="images/hotel-room.jpg" width="275" height="165" style="display: block; margin: 0 auto"
+                />
+                <span>Setiap kamar di desain dengan suasana pedesaan yang sejuk, di lengkapi dengan perlengkapan
+                    tidur yang memanjakan seperti tempat tidur spring-bed, layar flat TV, bebas akses
+                    internet. Ketika membuka jendela, Anda akan melihat pemandangan Gunung Merapi yang
+                    menawan, serta pada sisi lainnya pemandangan kota Yogya dari atas semakin menambah
+                    menarik pemandangan yang di lihat. Semuanya dapat Anda nikmati dari jendela kamar
+                    Anda Lorem ipsum dolor sit amet, cupidatat non proident, duis aute irure dolor. Sed
+                    do eiusmod tempor incididunt mollit anim id est laborum. Velit esse cillum dolore
+                    ut enim ad minim veniam. Duis aute irure dolor lorem ipsum dolor sit amet, ullamco
+                    laboris nisi.</span>
+            </div>
+            <div data-role="footer" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-theme="b">
+                <h1>Guest House Azaya</h1>
+            </div>
+        </div>
+        <div data-role="page" id="dining" style="background-image: url('images/IMG_4788.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Dining</h1>
+                <a data-role="button" href="#menu" data-transition="flip" data-icon="arrow-l"
+                data-theme="b">Back</a>
+            </div>
+            <div data-role="content">
+                <h3>Makanan Khas Makassar</h3>
+                <ul data-role="listview" data-inset="true">
+                    <li data-theme="b">
+                        <a href="#konro">Sop Konro</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#pallubasa">Pallubasa</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#pisangepek">Pisang Epek</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House Azaya</h1>
+            </div>
+        </div>
+        <div data-role="dialog" id="konro" data-theme="b">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+                <h1>Sop Konro</h1>
+            </div>
+            <div data-role="content">
+                <img src="images/sup-konro.jpg" alt="300" width="300" style="display: block; margin: 0 auto"
+                />
+                <span>Makanan khas Makassar yang satu ini adalah salah satu sasaran utama kuliner di daerah
+                    Sulawesi Selatan. Sup konro merupakan masakan khas Makassar yang disajikan berupa
+                    sop berkuah maupun dibakar dengan bahan-bahan dasar seperti tulang rusuk sapi atau
+                    kerbau, dimasak atau dibakar dengan bumbu ketumbar, jintan, sereh, kaloa, bawang
+                    merah, bawang putih, garam yang sudah dihaluskan. Sop Konro pada umumnya disajikan
+                    atau dimakan bersama nasi putih dan sambal.</span>
+            </div>
+        </div>
+        <div data-role="dialog" id="pallubasa">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+                <h1>Pallubasa</h1>
+            </div>
+            <div data-role="content">
+                <img src="images/Pallubasa.jpg" style="display: block; margin: 0 auto" />
+                <span>Pallibasa adalah salah satu kuliner khas Makasar yang terbuat dari jeroan kerbau
+                    ataupun sapi. Jeroan direbus dengan waktu yang lama, kemudian diiris dan disajikan
+                    di dalam mangkuk. Makanan ini hampir serupa dengan Coto Makasar.</span>
+            </div>
+        </div>
+        <div data-role="dialog" id="pisangepek" data-theme="b">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+                <h1>Pisang Epek</h1>
+            </div>
+            <div data-role="content">
+                <img src="images/Pisang-Epe.jpg" style="display: block; margin: 0 auto" />
+                <span>Saat Anda sedang berlibur ke Pantai Losari, Anda akan menjumpai banyak pedagang
+                    Pisang Epe. makanan ini dibuat dengan cara dijepit hingga pipih, kemudian dibakar
+                    sampai matang. Setelah matang pisang sirami dengan saus yang terbuat dari gula merah.</span>
+            </div>
+        </div>
+        <div data-role="page" id="garden">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+                <h1>Garden</h1>
+                <a data-role="button" href="#menu" data-icon="arrow-l" data-theme="b">Back</a>
+            </div>
+            <div data-role="content">
+                <h3>Fasilitas Menarik</h3>
+                <img src="images/1.jpg" width="300" height="165" />
+                <img src="images/2.jpg" width="300" height="165" />
+                <img src="images/3.jpg" width="300" />
+                <img src="images/5.jpg" width="300" height="165" />
+                <img src="images/4.jpg" width="300" height="200" />
+                <img src="images/6.jpg" width="300" height="210" />
+            </div>
+            <div data-role="footer" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House Azaya</h1>
+            </div>
+        </div>
+        <div data-role="page" id="reservation">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+                <h1>Reservation</h1>
+                <a data-role="button" href="#menu" data-transition="flip" data-icon="arrow-l"
+                data-theme="b">Back</a>
+            </div>
+            <div data-role="content">
+                <h3>Order Ke Kami</h3>
+                <form action="http://" method="POST">
+                    <span>Panggilan:</span>
+                    <select data-native-menu="false" data-mini="true" data-inline="true">
+                        <option value="1">Mr.</option>
+                        <option value="2">Mrs.</option>
+                    </select>
+                    <div data-role="fieldcontain">
+                        <label for="text1">Nama Depan</label>
+                        <input type="text" id="text1" data-mini="true" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="text2">Nama Keluarga</label>
+                        <input type="text" id="text2" data-mini="true" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="text3">Datang</label>
+                        <input type="text" id="text3" data-mini="true" value="dd/mm/yy" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="text4">Keluar</label>
+                        <input type="text" id="text4" data-mini="true" value="dd/mm/yy" />
+                    </div>
+                    <h4>Tamu</h4>
+                    <div data-role="fieldcontain" id="slider1">
+                        <label for="slider1-range">Dewasa</label>
+                        <input type="range" id="slider1-range" value="15" min="0" max="15"
+                        step="1" data-mini="true" data-highlight="true" />
+                    </div>
+                    <div data-role="fieldcontain" id="slider2">
+                        <label for="slider2-range">Anak</label>
+                        <input type="range" id="slider2-range" value="15" min="0" max="15" step="1"
+                        data-mini="true" data-highlight="true" />
+                    </div>
+                    <a data-role="button" data-inline="true">Cek Ketersediaan</a>
+                </form>
+            </div>
+        </div>
+        <div data-role="page" id="info" data-theme="a">
+            <div data-role="header" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+                <h1>Info</h1>
+            </div>
+            <div data-role="content">
+                <h4>Nama : Salis Farkhanani</h4>
+                <h4>NIM : A22.2014.02379</h4>
+            </div>
+            <div data-role="footer" style="background-image: url('images/IMG_4721.JPG'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#home" data-rel="page" data-transition="flip" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#menu" data-rel="page" data-transition="flip" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#" data-icon="info">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
